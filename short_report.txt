@@ -1,0 +1,19 @@
+## Purpose
+This document provides additional notes and context for the YOLO Object Detection notebook.
+
+## Model Details
+- The notebook primarily uses `yolo26n.pt` and `yolo26s.pt` from Ultralytics. These are general-purpose object detection models.
+- Confidence thresholds for detection can be adjusted in the code to fine-tune results.
+
+## Image Processing
+- Images are read using OpenCV (`cv2.imread`).
+- `cv2_imshow` is used for displaying images within Google Colab, as `cv2.imshow` is not directly supported.
+
+## Data Handling
+- Example images are loaded from the `/content/examples` directory.
+- The notebook demonstrates iterating through multiple image files for batch processing.
+
+## Future Enhancements
+- Implement custom dataset training for specific object detection tasks.
+- Integrate with other image processing or data analysis pipelines.
+- Add performance metrics evaluation for the models.
